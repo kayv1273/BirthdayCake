@@ -67,7 +67,10 @@
                 <SeekBar
                     android:id="@+id/seekBar"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:max="5"
+                    android:progress="2" />
             </LinearLayout>
 
             <LinearLayout
@@ -81,13 +84,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
-                    android:text="Frosting" />
+                    android:text="Frosting"
+                    android:checked="true" />
 
                 <Switch
                     android:id="@+id/switch2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Candles" />
+                    android:text="Candles"
+                    android:checked="true" />
             </LinearLayout>
 
             <LinearLayout
@@ -108,6 +113,8 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
+                    android:onClick="goodbye"
+                    android:tag="button"
                     android:text="Goodbye" />
             </LinearLayout>
 
